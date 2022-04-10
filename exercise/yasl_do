@@ -1,0 +1,19 @@
+#!yasl
+
+4 != ? (0 exit) // error management if no arguments do nothing
+! // erase name of exec
+
+" " // <space><number1><operator><number2>
++ // <number1 space><operator><number2>
+
+3^ // <number2><number1 space><operator>
+" " // <space><number2><number1 space><operator>
++ // <number 2 space><number1 space><operator
++ // <number1 space number2 space><operator>
+
+2^ // <operator><number1 space number2>
++ // <number1 space number2 operator>
+
+" (print \"\n\" print) " 
++
+eval

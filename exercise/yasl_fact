@@ -1,0 +1,32 @@
+#!yasl
+
+{
+    =
+    0 == ?(
+        !
+        1 
+    ):(
+        = 1 -
+        factorial
+        *
+    )
+}factorial
+
+2 != ? (0 exit) // error management if no arguments do nothing
+! // erase name of exec
+
+// checking if it is an int
+= ][  
+    #(
+        "0" !=  										// ascii difference with '0'
+		10 > ?											// checking if it is char
+ 		("Not an integer parameter\n" print 0 exit)  
+    )
+
+= 0 < ? ("Not a positif integer\n" print 0 exit)  
+
+= 20 > ? ("Overflow\n" print 0 exit)
+
+factorial
+
+print "\n" print

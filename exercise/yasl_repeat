@@ -1,0 +1,27 @@
+#!yasl
+
+2 < ? (0 exit) // If less then 1 parameter exit
+! // drop program name
+
+// checking if it is an int
+= ][  
+    #(
+        "0" !=  										// ascii difference with '0'
+		10 > ?											// checking if it is char
+ 		("Not an integer parameter\n" print 0 exit)  
+    )
+
+= 0 < ? ("Not a positif integer\n" print 0 exit)
+
+# 1 -
+#(
+	=
+	3 !^
+	0 + 
+	#(
+		=
+		print
+	)
+	!
+	("\n" print)
+)
